@@ -1,0 +1,56 @@
+  body {
+    background-color: #e8e8f9;
+    font-family: "Nunito", sans-serif;
+    background-repeat: repeat;
+    animation: move-pattern-horizontal 3s linear infinite;
+  }
+  
+  .tta-logo p{
+    line-height: 0.9;
+    font-weight: 800;
+    font-size: 9px;
+    margin-top: 0.5rem;
+  }
+  .dividered {
+    width: 30px;
+    height: 100%;
+    background-color: #333;
+    cursor: col-resize;
+}
+/* Flip Card Container */
+.flip-card {
+  perspective: 1000px;
+  width: 100%; /* Full width for responsiveness */
+  height: 100%;
+}
+
+/* Flip Card Inner */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 250%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+/* Front and Back Faces */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Apply flip when the class is toggled */
+.flipped {
+  transform: rotateY(180deg);
+}
+
+#tta-loader{position:fixed;width:96px;height:96px;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#ffffffe6;-webkit-box-shadow:0px 24px 64px rgba(0,0,0,.24);box-shadow:0 24px 64px #0000003d;border-radius:16px;opacity:0;visibility:hidden;-webkit-transition:opacity .2s ease-out,visibility 0s linear .2s;-o-transition:opacity .2s ease-out,visibility 0s linear .2s;transition:opacity .2s ease-out,visibility 0s linear .2s;z-index:1000}#tta-loader.fullscreen{padding:0;left:0;top:0;width:100%;height:100%;-webkit-transform:none;-ms-transform:none;transform:none;border-radius:0;-webkit-box-shadow:none;box-shadow:none;background:#e8e8f9}#tta-loader.show{-webkit-transition:opacity .4s ease-out,visibility 0s linear 0s;-o-transition:opacity .4s ease-out,visibility 0s linear 0s;transition:opacity .4s ease-out,visibility 0s linear 0s;visibility:visible;opacity:1}div.circular_wrap{width:80px;height:80px;display:inline-block}div.circular_wrap img{position:absolute;width:45px;top:50%;left:50%;transform:translate(-50%,-50%)}#tta-loader .circular_wrap{position:absolute;left:calc(50% - 40px);top:calc(50% - 40px);-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0)}

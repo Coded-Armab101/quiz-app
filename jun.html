@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://web.tta.ng/favicon.svg" type="">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>youm</title>
+</head>
+<body class="flex m-0 p-0">
+    <div class="first w-9/12  border-r-4 border-blue-800">
+        <div class="f ">
+        <div class="tta-logo w-32 py-6 px-8 flex items-center gap-1">
+            <img src="./imgaes/tta_blue-BsHJBvc_.png" alt="">
+            <p>TECH TALENT ACADEMY</p>
+          </div>
+          <h1 class="text-3xl text-center text-blue-950 underline py-4 ">5 days Robotic Program Quiz</h1>
+        </div>
+        <div class="grid grid-cols-3 gap-3 px-6 ">
+            <div class="translate">
+                <!-- <div class="flip-card "> -->
+                  <div class="flip-card-inner " id="flip-card">
+                    <div class="flip-card-front border-2 border-blue-800 bg-blue-900 p-4 rounded-lg  shadow">
+                      <img src="https://web.tta.ng/favicon.svg" alt="">
+                      <h1 class="text-center py-8 text-2xl text-white">Question One</h1>
+                      <p id="move-1" class="nove text-4xl font-extrabold mx-auto text-center text-blue-900 bg-white h-12 w-12 flex justify-center items-center p-8 rounded-full cursor-pointer">1</p>
+                    </div>
+                    <div class="flip-card-back bg-grey-200 p-8 rounded-lg  shadow">
+                      <h1 class="text-2xl font-extrabold text-blue-950 text-center border-b-2 border-blue-800 m-0">Smart Fan</h1>
+                      <p class="px-4 py-2 text-lg text-blue-950">A system that detects human presence and automatically turns on the fan, exploring IoT concepts.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+          
+        </div>
+       </div>
+       
+      
+     
+
+
+    </div>
+    <div class="dividered"></div>
+
+
+</html> 
+<script>
+    const flipCardInner = document.getElementById('flip-card');
+    const flipTrigger = document.getElementById('move-1');
+  
+    // Toggle the flipped state on click
+    flipTrigger.addEventListener('click', () => {
+      flipCardInner.classList.toggle('flipped');
+    });
+  </script>
+     
+</body>
